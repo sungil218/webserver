@@ -1,3 +1,5 @@
 const HOME = "/";
-
-export default routes;
+const route = {
+    home: HOME
+}
+module.exports = route;
