@@ -14,8 +14,8 @@ app.use(bodyParser.json());
 //app.use(routes.home,)
 
 
-mongoose.connect("3.15.85.16:27017/Anyang_db")
-  .then(() => console.log('Successfully connected to mongodb'))
+mongoose.connect("mongodb://3.15.85.16:27017/Anyang_db",{useNewUrlParser: true, useUnifiedTopology: true})
+  .then( console.log('Successfully connected to mongodb'))
   .catch(e => console.error(e));
 
   
